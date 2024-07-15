@@ -1,9 +1,9 @@
 // script.js
 
-document.querySelectorAll('#sitevitrine, #siteecommerce,#portofolio, #creationlogo, #affichepublicitaire').forEach(service => {
+document.querySelectorAll('#unservice').forEach(service => {
     service.addEventListener('click', () => {
         // Retirer la classe 'stabilized' de tous les éléments
-        document.querySelectorAll('#sitevitrine, #siteecommerce,#portofolio, #creationlogo, #affichepublicitaire').forEach(item => {
+        document.querySelectorAll('#unservice').forEach(item => {
             if (item !== service) {
                 item.classList.remove('stabilized');
             }
