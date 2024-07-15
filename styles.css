@@ -200,6 +200,7 @@ h1 a:hover {
 
 #lesservices{
     display: flex;
+    flex_wrap: wrap;
     z-index: 1;
     position: relative;
     margin-left: auto;
