@@ -194,22 +194,41 @@ main{
     box-sizing: border-box;
 }
 
-.contact-form {
+.contact {
     background-color: #fff;
     padding: 8em;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form h1 {
+#titre1{
     color: rgb(34, 34, 170);
     font-family: cursive;
     text-align: center;
-    font-size: 48px;
+    font-size: 64px;
     margin-bottom: 20px;
 }
 
-.contact-form label {
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#titre1, #titre2, #titre3, #titre4 {
+    opacity: 0;
+}
+
+.in-view {
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+.contact label {
     color: rgb(34, 34, 170);
     font-family:monospace;
     text-align: center;
@@ -217,8 +236,8 @@ main{
     margin-bottom: 20px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact input,
+.contact textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -226,7 +245,7 @@ main{
     border-radius: 28px;
 }
 
-.contact-form button {
+.contact button {
     padding: 10px 20px;
     background-color: #5cb85c;
     color: white;
@@ -262,7 +281,7 @@ main{
     box-shadow: 0 0 5px red;
 }
 
-.contact-form button:hover {
+.contact button:hover {
     color: #5cb85c;
     background-color: white;
 }
@@ -332,23 +351,38 @@ h4 a:hover {
     color: rgb(0, 119, 255);
 }
 
-p{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width:fit-content;
-    height: fit-content;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#a{
+a{
     text-decoration: none;
-    color: lightblue;
+    color: blue;
     transition: color 0.3s;
 }
 
-#a:hover{
+a:hover{
+    color: darkblue;
+}
+
+h2 {
+    color: rgb(34, 34, 170);
+    font-family: monospace;
+    font-size: 28px;
+}
+
+h4 {
+    font-family: consolas;
+    size: 16px;    
+}
+
+#coordonnees {
+    list-style-type: none;
+}
+
+#coordonnees li{
+    font-family: consolas;
+}
+
+#coordonnees li::before{
+    content: "•";
     color: blue;
+    font-size: 20px;
+    margin-right: 10px;
 }

@@ -244,9 +244,9 @@ nav ul li a:hover::after {
 #uneconception{
     margin-bottom: 20px;
     padding: 2em;
-    border-radius: 28px;
+    border-radius: 8px;
     border-color: rgb(104, 104, 104);
-    background-color: #e0e0e0;
+    background-color: #ffffff;
 }
 
 #uneconception h3{
@@ -256,7 +256,7 @@ nav ul li a:hover::after {
     margin-right: auto;
     font-family: consolas;
     color: green;
-    font-size: 46px;
+    font-size: 36px;
 }
 
 #uneconception div{
